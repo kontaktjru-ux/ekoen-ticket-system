@@ -1,0 +1,26 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Wymuszenie proporcji i rozmiarów dla ikonek SVG w kafelkach KPI */
+.schedule-kpi-scrollbar svg {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  max-width: 1.5rem !important;
+  max-height: 1.5rem !important;
+  display: block;
+}
+
+/* Custom Scrollbary z naszego systemu */
+.schedule-custom-scrollbar::-webkit-scrollbar { width: 5px; height: 5px; }
+.schedule-custom-scrollbar::-webkit-scrollbar-track { background: rgba(241, 245, 249, 0.4); border-radius: 10px; }
+.schedule-custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(148, 163, 184, 0.3); border-radius: 10px; }
+.schedule-custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(88, 179, 71, 0.8); }
+
+.schedule-kpi-scrollbar::-webkit-scrollbar { height: 6px; }
+.schedule-kpi-scrollbar::-webkit-scrollbar-track { background: rgba(88, 179, 71, 0.1); border-radius: 10px; }
+.schedule-kpi-scrollbar::-webkit-scrollbar-thumb { background: rgba(88, 179, 71, 0.4); border-radius: 10px; }
+.schedule-kpi-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(88, 179, 71, 0.8); }
+
+.dropdown-enter-active, .dropdown-leave-active { transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+.dropdown-enter-from, .dropdown-leave-to { opacity: 0; transform: scale(0.95) translateY(-5px); }
